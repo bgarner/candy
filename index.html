@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<style>
+		
+		.card{
+			height: 200px;
+			width: 120px;
+			margin: 20px auto;
+			border: 1px solid silver;
+		}
+
+		.colourblock{
+			display: block;
+			padding: 0px;
+			height: 80px;
+			width: 80px;
+			margin: 10px auto;
+			border: thin solid silver;
+
+		}
+	.red { background-color: #ff0000; }
+	.blue { background-color: #0000ff; }
+	.green { background-color: #00ff00; }
+	.yellow { background-color: #ffff00; }
+	.orange { background-color: #ffa100; }
+	.purple { background-color: #8c00ff; }	
+	.bad { background: transparent  url('images/pirate.jpg') top left no-repeat; }
+	.wildcard { background: transparent  url('images/joker.jpg') top left no-repeat; }		
+
+	</style>
+</head>
+<body>
+
+<a href="#" id="draw">draw</a>
+
+<div class="card">
+
+</div>
+
+<p>Deck: <span class="deckval"></span></p>
+<p>Discard: <span class="usedval"></span></p>
+<table>
+	<tr>
+		<td valign="top" width="50%"><p><strong>Cards in pile:</strong><br /> <span class="pile"></span></p></td>
+		<td valign="top" width="50%"><p><strong>Cards in discard:</strong><br /> <span class="discardpile"></span></p></td>
+	</tr>
+</table>
+
+
+<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+<script type="text/javascript" src="./random.js" ></script>
+</body>
+</html>
